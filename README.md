@@ -1,6 +1,6 @@
-# web-molecular-graphics/admin
+# WMG: admin
 
-This repo provides an attempt to start organising the web molecular graphics group mentioned in Shonan Meeting 2016.
+This repo provides a convenient place to start organising the Web Molecular Graphics (WMG) group mentioned in Shonan Meeting 2016.
 
 ## FAQ
 
