@@ -18,9 +18,9 @@ One of the first tasks will be to decide how best to fill in the following blank
  * sharing code
  * ... TODO
 
-## What other things should be here...?
+## What other sub-headings should be this page...?
 
- * ... TODO
+ * good question ... TODO
 
 ## GitHub 'admins'
 
