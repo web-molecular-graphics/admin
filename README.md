@@ -81,4 +81,4 @@ Note: the ideal way of getting in touch is by [raising an issue](https://github.
     visualization methods and tools are urgently needed, which can make the more complex data 
     accessible and interpretable."
 
-  http://shonan.nii.ac.jp/shonan/blog/2015/10/30/web-%E2%80%90based-molecular-graphics/
+  [http://shonan.nii.ac.jp/shonan/blog/2015/10/30/web-based-molecular-graphics/](http://shonan.nii.ac.jp/shonan/blog/2015/10/30/web-%E2%80%90based-molecular-graphics/)
