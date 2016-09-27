@@ -101,7 +101,7 @@ Day4: September 8th (Thu)
 
 
 \section{Keynote and Technical Talks}
-\SHONANabstract{Compressive Structural Bioinformatics: High Efficiency 3D Structure Compression}{Peter Rose, RSCB (Research Collaboratory for Structural Bioinformatics), USA}
+\SHONANabstract{Compressive Structural Bioinformatics: High Efficiency 3D Structure Compression}{Peter Rose, Peter Rose, RCSB Protein Data Bank, San Diego Supercomputer Center, University of California, San Diego, USA}
 
 Technologies in structural biology continue to improve and help determine ever-larger 3D macromolecular complexes. Interactive visualization of large complex structures and large scale queries or structural comparisons across the entire Protein Data Bank (PDB) archive are becoming a bottleneck in terms of network bandwidth, I/O, parsing, and memory consumption. We have developed a compact and extensible file format (MacroMolecular Transmission Format, MMTF, http://mmtf.rcsb.org) for 3D molecules to overcome these challenges. This compact representation enables efficient data transfer and parsing for interactive visualization on the web that is one to two orders of magnitudes fast than using standard PDB or mmCIF file formats. MMTF files also contain bonds and bond orders and consistently calculated secondary structure information (DSSP). Both the MMTF specification and encoders and decoders are available open source in GitHub (https://github.com/rcsb/mmtf). MMTF Decoders are available in Java, JavaScript, Python, and a C/C++ version is under development. Early adopters of MMTF include NGL Viewer, Jmol/JSmol, 3Dmol.js, iCn3D, ICM-Browser, PyMol, BioJava, and Biopython.
 
@@ -204,7 +204,11 @@ Recent advances in live-cell imaging analysis and mathematical modeling have pro
 \section{Breakout group discussions}
 \subsection{Augmented Reality and Virtual Reality}
 
-TODO: Some text should go here.
+This session investigated the current state of augmented reality (AR) and virtual reality (VR) in web molecular graphics. We considered challenges, opportunities, use cases, and perspectives of these technologies for education, outreach, and research. 
+
+Recent capabilities and advancements in AR/VR hardware and experiences have significantly revolutionized gaming and entertainment industries. Within the past year, we believe this technology has reached several 'tipping points', evident in the worldwide craze in applications such as Pokemon Go and Snapchat. Although AR/VR technologies have been available for decades, the technology has often been labelled as 'gimmicky', or one-off experiences with high wow-factor. With the introduction of affordable and effective low-end (Google Cardboard, mobile AR) and high-end hardware (Oculus, HTV Vive, Hololens), we discussed the importance of experience creation, delivery, and the power of content-driven adoption. Authoring and designing experiences for molecular data include use cases in remote collaboration, education, outreach, and research. 
+
+In an effort to accelerate the 'tipping point' for web molecular graphics, we present a review of available web AR/VR authoring tools, successful content to date, and available hardware (refer to reference link).
 
 \subsection{Building Mash-Ups -- Interoperability Requirements}
 
@@ -297,27 +301,37 @@ We also produced a wish-list of features molecular viewers should implement in o
 	\begin{itemize}
 	\item  show iso-surfaces for energy maps
 	\item  simultaneously visualise multiple surfaces with quick on/off switch 
-	\item  see pockets and surfaces without obscuring chemical detail -- \emph{idea:} use separate slab for surfaces 
+	\item  see pockets and surfaces without obscuring chemical detail -- \emph{suggestion:} use separate slab for surfaces 
 	\end{itemize}
-\item  \underline{Visualisation of clashes }--  \emph{idea:} colour the molecular surface by the amount of the van-der-Waals overlap
-\item  \underline{Visualise H-bonds} so they are distinguishable from covalent bonds -- \emph{idea:} show H-bonds as disks or small surfaces in the areas of the van-der-Waals overlap
-\item  \underline{Visualisation of electrostatic interactions:} difficult because that would require displaying electrostatic fields of the interaction partners -- \emph{idea:} coordinate with a 2D view (in a mash-up display) that shows electrostatics
+\item  \underline{Visualisation of clashes }--  \emph{suggestion:} colour the molecular surface by the amount of the van-der-Waals overlap
+\item  \underline{Visualise H-bonds} so they are distinguishable from covalent bonds -- \emph{suggestion:} show H-bonds as disks or small surfaces in the areas of the van-der-Waals overlap
+\item  \underline{Visualisation of electrostatic interactions:} difficult because that would require displaying electrostatic fields of the interaction partners -- \emph{suggestion:} coordinate with a 2D view (in a mash-up display) that shows electrostatics
 \end{itemize}
 
 \subsection{Review of the State of the Art}
 
-\emph{Participants:} Mike Goodstadt, Shuichi Onami, Bj\"{o}rn Sommer, Jenny Vuong, Merry Wang, W. Jim Zheng
+\emph{Participants:} 
+Mike Goodstadt, Shuichi Onami, Bj\"{o}rn Sommer, Jenny Vuong, Merry Wang, W. Jim Zheng
 \medskip
-Visualization in molecular biology has played an essential role in revealing mechanisms of biological function. Our ability to visualize molecular interactions at the atomic level is astonishing. For many cases, 2D visualization will suffice, but there remain many biological systems where 3D visualization is essential: the exploration of 3D genomes, proteins, membrane patches and simulations, vesicles, metabolic reactions on the atomic scale, etc.
+
+Visualization in molecular biology has played an essential role in revealing mechanisms of biological function. Our ability to visualize molecular interactions at the atomic level is astonishing. For many cases, 2D visualization will suffice, but there remain many biological systems where 3D visualization is essential: the exploration of 3D genomes, proteins, membrane patches and simulations, vesicles, metabolic reactions on the atomic scale, etc.
 
 In the past, the dissemination and exploration of three-dimensional models was limited, as visualizations of models were prepared on specialist equipment, and then distilled into publication figures. For complex operations, specialized tools were required for the visualization of these models. 
 
-Today, we are poised to enter an era of unprecedented access to 3D visualizations of biological molecular systems.  This is due to the maturation of a number of technologies: 1) commodity graphics cards, 2) JavaScript in web browsers, 3) the WebGL standard and 4) distributed data delivery. In this breakout session, the initial manuscript was discussed which focuses at the web representation of molecular graphics in the browser. The initial idea for this manuscript goes back to an initiative starting at the VizBi 2016 with Se\'{a}n O'Donoghue and Bjorn Sommer, and later extended by Bosco Ho and Xavier Ho. 
+Today, we are poised to enter an era of unprecedented access to 3D visualizations of biological molecular systems.  This is due to the maturation of a number of technologies: 1) commodity graphics cards, 2) JavaScript in web browsers, 3) the WebGL standard and 4) distributed data delivery. 
+In this breakout session, the initial manuscript was discussed which focuses at the web representation of molecular graphics in the browser. The initial idea for this manuscript goes back to an initiative starting at the VizBi 2016 with Se\'{a}n O'Donoghue and Bjorn Sommer, and later extended by Bosco Ho and Xavier Ho. 
 
 With the break out session group, the structure of the paper was discussed and improved. Whereas the initial manuscript was focusing only on web tools visualized with WebGL and JavaScript, it was decided to discuss also relevant tools that are still based on older technologies, such as Java applets. A good example is Jmol, which was used in the past as a Java applet, but nowadays is also available for the web as the web version JSmol. Still, tools like Aquaria are not fully implemented in WebGL.
 
 The basic chapters for the manuscript were fixed as follows:
-\begin{itemize}\item Introduction (with history, from Java Applets to WebGL)\item Methods (Technical Background: OpenGL, JavaScript, WebGL)\item Frameworks (such as ThreeJS and Unity3D; with table)\item Applications (Jmol, JSmol, Aquaria, Jolecule, etc.; with table)\item Data Formats\item Conclusion\item Outlook
+\begin{itemize}
+\item Introduction (with history, from Java Applets to WebGL)
+\item Methods (Technical Background: OpenGL, JavaScript, WebGL)
+\item Frameworks (such as ThreeJS and Unity3D; with table)
+\item Applications (Jmol, JSmol, Aquaria, Jolecule, etc.; with table)
+\item Data Formats
+\item Conclusion
+\item Outlook
 \end{itemize}
 
 A big advantage of the workshop was the fact that many developers of the different tools were available on site, so we decided to prepare the tables required for the final publications by directly confronting the developers with our questions. The result is an initial table that will be later revised by all co-authors.
